@@ -1,12 +1,19 @@
 month = 9
 
-spring_months = ...  # TODO записать словарь весенних месяцев, где ключ это номер месяца, а значение его название
-summer_months = ...  # TODO записать список месяцев лета
-autumn_months = ...  # TODO записать кортеж месяцев осени
-winter_months = ...  # TODO записать список месяцев зимы
+spring_months = {
+    3:"Март",
+    4:"Апрель",
+    5:"Май",
+}
+summer_months = [6, 7, 8]
+autumn_months = (9, 10, 11)
+winter_months = {12, 1, 2}
 
 if month in spring_months:
     print("Весна")
 elif month in summer_months:
     print("Лето")
-# TODO дописать условие elif для осени и зимы
+elif month in autumn_months:
+    print("Осень")
+elif month in winter_months:
+    print("Зима")

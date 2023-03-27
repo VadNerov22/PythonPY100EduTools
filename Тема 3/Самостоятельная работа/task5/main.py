@@ -2,13 +2,11 @@ list_ = [4, -1, 10, -1, 3, 3, -1, 8, 6, 9]
 
 # предположим, что первый элемент в нашем списке минимальный
 min_value_index = 0
-min_value = list_[min_value_index]
+min_value = 0
 
-# TODO заменить на enumerate
-for i in range(len(list_)):
-    current_value = list_[i]
-    if current_value <= min_value:
-        min_value = current_value
+# заменить на enumerate
+for i, value_ in enumerate(list_):
+    if value_ == min(list_):
+        min_value = value_
         min_value_index = i
-
 print("Минимальный элемент =", min_value, "находится по индексу", min_value_index)

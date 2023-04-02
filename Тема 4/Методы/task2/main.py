@@ -1,7 +1,8 @@
 def is_palindrome(str_):
-    ...  # TODO привести строку к единому регистру и избавиться от пробелов
+    str_ = str_.lower()
+    str_ = "".join(str_.split())
 
-    if ...:  # TODO проверка палиндрома
+    if str_ == str_[::-1]:
         print("Строка палиндром")
     else:
         print("Строка не палиндром")

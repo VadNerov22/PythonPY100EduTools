@@ -1,4 +1,7 @@
-# TODO запишите здесь функцию factorial
+def factorial(n):
+    itog_ = 1
+    for i in range(1, n + 1):
+        itog_ *= i
+    return itog_
 
-
-# TODO распечатать результат выполнения функции factorial от числа 5
+print(factorial(5))

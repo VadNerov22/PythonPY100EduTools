@@ -6,4 +6,7 @@ students_dict = {
     'Оля': 43, 
 }
 
-# TODO найти средний возраст студентов
+vozrast = list(students_dict.values())
+sr_vozrast = sum(vozrast) / len(vozrast)
+
+print(sr_vozrast)

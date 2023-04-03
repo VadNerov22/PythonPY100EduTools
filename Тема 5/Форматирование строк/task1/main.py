@@ -6,4 +6,5 @@ students_dict = {
     'Оля': 43, 
 }
 
-# TODO распечатать с использованием f-строк
+for student, mark in students_dict.items():
+    print(f"Студент {student} получил {mark} баллов")

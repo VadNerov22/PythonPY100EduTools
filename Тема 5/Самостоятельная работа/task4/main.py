@@ -1,3 +1,4 @@
+import random
 from random import choice
 
 
@@ -9,8 +10,15 @@ counts = [10, 100, 1000, 100000, 1000000]  # различное количест
 list_freq = []  # список, где будем хранить отношение количества выпавших орлов к решке
 
 for count in counts:
-    ...  # TODO подсчитать количество выпаданий орлов и решек
-
-    # TODO разделить минимальное число среди орлов и решек на максимальное число и сохранить результат
+    eagle_count = 0
+    tails_count = 0
+    for i in range(count):
+        s = random.choice(coin)
+        if s == EAGLE:
+            eagle_count += 1
+        else:
+            tails_count += 1
+    freq = min(eagle_count, tails_count) / max(eagle_count, tails_count)
+    list_freq.append(freq)
 
 print(list_freq)

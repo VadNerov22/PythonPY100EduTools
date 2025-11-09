@@ -12,10 +12,10 @@ def get_count_char(str_):
 def get_procent_char(str_):
 # 5. Функция принимает словарь символов, где количество каждого элемента заменено на процентное отношение ко всем символам.
     count_procent_char = get_count_char(str_)
-    all_ = sum(v for v in count_procent_char.values()) / 100
     for v in count_procent_char:
-        count_procent_char[v] *= all_
+        count_procent_char[v] *= 100 / sum(count_procent_char.values())
     return count_procent_char
+
 
 main_str = """
     Данное предложение будет разбиваться на отдельные слова. 
